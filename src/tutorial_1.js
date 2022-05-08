@@ -58,9 +58,11 @@ const node2 = async function () {
     return ipfs
 }
 
+
 async function getNodes() {
     return await Promise.all([node0(), node1(), node2()])
 }
+
 
 module.exports = { Ipfs, getNodes }
 
